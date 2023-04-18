@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+</head>
+<body>
+    <script>
+        function reajuste(){
+            var salario = prompt("Qual é o seu salário?");
+            salario = parseFloat(salario);
+            var porcentagem = (salario / 100);
+            var aumento;
+            var salFinal;
+
+            if(salario <= 280.00){
+                aumento = porcentagem * 20;
+                salFinal = aumento + salario;
+                alert("Seu salário atual é de: R$" + salario);
+                alert("Você terá um aumento de: 20%;" + " Oque equivale a: R$" + aumento);
+                alert("Seu novo salário é de: " + salFinal);
+            }
+            else if(salario <= 700.00){
+                aumento = porcentagem * 15;
+                salFinal = aumento + salario;
+                alert("Seu salário atual é de: R$" + salario);
+                alert("Você terá um aumento de: 15%;" + " Oque equivale a: R$" + aumento);
+                alert("Seu novo salário é de: " + salFinal);
+            }
+            else if(salario <= 1500.00){
+                aumento = porcentagem * 10;
+                salFinal = aumento + salario;
+                alert("Seu salário atual é de: R$" + salario);
+                alert("Você terá um aumento de: 10%;" + " Oque equivale a: R$" + aumento);
+                alert("Seu novo salário é de: " + salFinal);
+            }
+            else{
+                aumento = porcentagem * 5;
+                salFinal = aumento + salario;
+                alert("Seu salário atual é de: R$" + salario);
+                alert("Você terá um aumento de: 5%;" + " Oque equivale a: R$" + aumento);
+                alert("Seu novo salário é de: " + salFinal);
+            }
+        }
+
+        reajuste();
+    </script>
+</body>
+</html>
